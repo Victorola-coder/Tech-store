@@ -12,6 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TAILWIND CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- TOASTIFY CDN  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
     <title>Tech Store</title>
   </head>
   <body class="bg-gray-800 text-white">
@@ -50,7 +58,10 @@
           </div>
 
           <!-- CART ICON -->
-          <span class="relative text-center">
+          <span
+            onclick="showToast()"
+            class="cursor-pointer relative text-center"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -72,9 +83,9 @@
 
             <small
               id="cart-count"
-              class="bg-red-500 text-xs text-white h-4 w-4 absolute -top-2 -right-2 rounded-full"
-              >0</small
-            >
+              class="bg-red-500 text-xs text-white h-4 w-4 absolute -top-2 -right-2 rounded-full translate-y-full"
+              >0
+            </small>
           </span>
         </div>
       </nav>
@@ -108,85 +119,15 @@
         <div
           id="products-wrapper"
           class="w-full max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-6 place-content-center p-4"
-        >
-          <div class="item space-y-2">
-            <div
-              class="bg-gray-100 flex justify-center relative overflow-hidden group cursor-pointer border rounded-xl"
-            >
-              <img
-                src="/images/playstation_5.png"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-              <button
-                class="status bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition group-hover:translate-y-0"
-              >
-                Add To Cart
-              </button>
-            </div>
-            <p class="text-xl">Playstation 5</p>
-            <strong>$399</strong>
-          </div>
-
-          <div class="item space-y-2">
-            <div
-              class="bg-gray-100 flex justify-center relative overflow-hidden group cursor-pointer border rounded-xl"
-            >
-              <img
-                src="/images/samsung_galaxy.png"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-              <button
-                class="status bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition group-hover:translate-y-0"
-              >
-                Add To Cart
-              </button>
-            </div>
-            <p class="text-xl">Samsung Galaxy</p>
-            <strong>$399</strong>
-          </div>
-
-          <div class="item space-y-2">
-            <div
-              class="bg-gray-100 flex justify-center relative overflow-hidden group cursor-pointer border rounded-xl"
-            >
-              <img
-                src="/images/playstation_5.png"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-              <span
-                class="status bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition group-hover:translate-y-0"
-                >Add To Cart</span
-              >
-            </div>
-            <p class="text-xl">Playstation 5</p>
-            <strong>$399</strong>
-          </div>
-
-          <div class="item space-y-2">
-            <div
-              class="bg-gray-100 flex justify-center relative overflow-hidden group cursor-pointer border rounded-xl"
-            >
-              <img
-                src="/images/cannon_eos_camera.png"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-              <button
-                class="status bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition group-hover:translate-y-0"
-              >
-                Add To Cart
-              </button>
-            </div>
-            <p class="text-xl">Cannon EOS Camera</p>
-            <strong>$749</strong>
-          </div>
-        </div>
+        ></div>
       </main>
     </header>
 
     <script src="/script.js"></script>
+    <!-- SCRIPT CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
   </body>
 </html>
